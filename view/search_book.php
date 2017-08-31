@@ -8,6 +8,7 @@ $('.search_book').keyup(function(){
 		data: "search="+txt,
 		dataType: 'text',
 		success: function(result){
+			debugger;
 			$('.test').html(result);
 			// $('.author').hide();
 		}				

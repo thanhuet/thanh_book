@@ -13,7 +13,7 @@
 			<table class='table'>
 				<thead>
 				<tr>
-					<td><button class='add_new_book'><i class='fa fa-plus' aria-hidden='true'></i>add new book</button></td>
+					<td><button class='add_new_book btn btn-primary'><i class='fa fa-plus' aria-hidden='true'></i>add new book</button></td>
 				</tr>
 					<tr>
 						<th>Id</th>

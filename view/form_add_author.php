@@ -1,5 +1,5 @@
 <div class="form_add_new_author">
-	<form action="" method="get" accept-charset="utf-8" class="form_edit_author_e">
+	<form action="" method="get" accept-charset="utf-8" class="form_edit_author_e form-horizontal">
 		Full name 
 		<input type="text" name="" class="name_author_edit_e"><br>
 		Email

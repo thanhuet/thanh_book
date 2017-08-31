@@ -11,7 +11,23 @@
 		$('.pub_year_book').val('');
 		return false;
 	});
-	// function author(){}
+	function test_author(name_author){
+			$.ajax({
+			url: '../book_result/index.php?action=test_author',
+			type: 'GET',
+			data: "name="+name_author,
+			dataType: 'text',
+
+			success: function(result){
+				if(result=='1'){
+					return 1;
+				}
+				else{
+					return 0;
+				}
+			}
+		});
+	}
 	// add book
 	$(document).on('click', '.submit_book', function(){
 		var id = $(this).attr('id');
@@ -27,9 +43,10 @@
 			dataType: 'text',
 			success: function(result){
 				$('.test').html(result);
-				// if(alert('bạn hãy nhập thông tin tác giả')){
-
+				// if(test_author(name)){
+				// 	alert('bạn hãy nhập thông tin tác giả');
 				// }
+
 			}
 		});		
 	});

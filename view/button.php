@@ -1,11 +1,11 @@
 	<div class="category">
-		<nav class="navbar navbar-inverse">
-		<div class="btn-group btn-group-justified">BOOK</div>
-		<ul class="">
-			<li class="btn btn-success"><input type="button" name="" value="Book" class="button_book"></li>
-			<li class="btn btn-success"><input type="button" name="" value="Author" class="button_author"></li>
-			<li class="" style=""><input type="text" name="" class="search_book" placeholder= 'search book'></li>
-			</ul>
+		<h2 class="navbar-header" style="color: black;margin-right: 40px;margin-top: 0px;">BOOK MANAGE</h2>
+		<nav class="navbar navbar-light bg-faded ">	
+		<form class="form-inline">			
+			<li class="btn btn-primary" ><span  name="" value="" class="button_book">Book</span></li>
+			<li class="btn btn-primary" ><span  name="" value="" class="button_author">Author</span></li>
+			<input style="float: right;width: 400px;" type="text" name="" class="search_book form-control mr-sm-10" placeholder= 'search book'></li>
+			</form>
 		</nav>
 		<div class="select">
 			<br><br>
@@ -32,7 +32,7 @@
 					}
 				?>
 			</select>
-			<input type="submit" name="" class="submit_select" value="submit" />
+			<input type="submit" name="" class="submit_select btn btn-primary" value="submit" />
 		</div>
 </div>
 <script>
@@ -48,5 +48,9 @@
 				$('.test').html(result);
 			}
 		});
+	});
+	$('.search_book').focus(function() {
+		$('.test').show();
+		$('.author').hide();
 	});
 </script>

@@ -26,8 +26,19 @@
 		$data_author = $model->show_author();
 		require APP_DIR.'/view/list_author.php';		
 	}
-	else{
-
+	// controller test author
+	elseif(isset($_GET['action']) && $_GET['action'] == 'test_author'){
+		$data_model = new author();
+		$data_author = $data_model->test_author($_GET['name']);
+		foreach ($data_author as $value) {
+		 	if ($value['Name'] == $_GET['name']){
+		 		echo '1';
+		 	}
+		 	else{
+		 		echo '0';
+		 	}
+		 } 
+		
 	}
 	// //controller search book
 	// elseif(isset($_GET['action']) && $_GET['action'] == 'search'){

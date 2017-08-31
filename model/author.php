@@ -50,6 +50,18 @@
 			Full_name='$Name',Email='$Email',Phone_number='$Phone',Birthday='$Birthday',Address= '$Address' WHERE Id = '$Id'";
 			mysqli_query($conn,$sql);	
 		}
+		// test author
+		function test_author($name){
+			global $conn;
+
+			$sql = "SELECT * FROM author WHERE Name = '$name'";
+			$qr = mysqli_query($conn,$sql);
+			$author = array();
+			while($assoc = mysqli_fetch_assoc($qr)){
+				$author[] = $assoc;
+			}
+			return $author;
+		}
 
 	}
 ?>

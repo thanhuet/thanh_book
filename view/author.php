@@ -8,7 +8,7 @@
 	<table class='table'>
 		<thead>
 			<tr>
-				<td><button class='add_new_author'><i class='fa fa-plus' aria-hidden='true'></i>add new author</button></td>
+				<td><button class='add_new_author btn btn-primary'><i class='fa fa-plus' aria-hidden='true'></i>add new author</button></td>
 			</tr>
 			<tr>
 				<th>Id</th>
